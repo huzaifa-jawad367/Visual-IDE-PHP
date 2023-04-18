@@ -4,11 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous" defer></script>
-	<link rel="stylesheet" href="styles.css"/>
+	<link rel="stylesheet" href="styles2.css">
 	<script src="script.js"></script>
-	<title>Document</title>
+	<title>Visual IDE</title>
 </head>
 <body>
 
@@ -16,47 +14,35 @@
 
 	<div class="container">
 
-		<h1 class="light">Code Blocks</h1>
-
+		<h1 class="light" style="color: aquamarine">Code Blocks</h1>
 		<!-- a div / block for 'for' block -->
-		<div class="draggable" draggable="true">
-			for <form action="GET" style="display: inline">
-			<input type="text" style="display: inline">
-			= <input type="number" style="display: inline">
-			; <input type="text" style="display: inline">
-			; i++</form>
-		</div>
-		<br>
-
+		<div id="for" class="draggable" draggable="true" >for</div>
 		<!-- if block -->
-		<div class="draggable" draggable="true">
-			if <form action="GET" style="display: inline">
-			<input type="text" style="display: inline">
-		</div>
-		<br>
-
+		<div id="if" class="draggable" draggable="true" >if</div>
 		<!-- else if -->
-		<div class="draggable" draggable="true">
-			else if <form action="GET" style="display: inline">
-			<input type="text" style="display: inline">
-		</div>
-		<br>
-
+		<div id="elif" class="draggable" draggable="true" >else if</div>
 		<!-- else -->
-		<div class="draggable" draggable="true">
-			else <form action="GET" style="display: inline">
-			<input type="text" style="display: inline">
-		</div>
-		<br>
+		<div id="else" class="draggable" draggable="true" >else</div>
+		<!-- defining variable -->
+		<div id="assign" class="draggable" draggable="true" >var assign</div>
+		<!-- while loop -->
+		<div id="while" class="draggable" draggable="true" >while</div>
+		<!-- Function creation -->
+		<div id="function" class="draggable" draggable="true" >function creation</div>
+		<!-- Arithematic Operations -->
+		<div id="add" class="draggable" draggable="true" >Add</div>
+		<div id="sub" class="draggable" draggable="true" >Subtract</div>
+		<div id="mult" class="draggable" draggable="true" >Multiply</div>
+		<div id="divide" class="draggable" draggable="true" >Divide</div>
+		<!-- Reading file -->
+		<div id="Readfile" class="draggable" draggable="true">Read File</div>
+		<div id="Writefile" class="draggable" draggable="true">Write File</div>
+
 	</div>
 
-	<div class="container program">
-		<h1>Program</h1>
-		<!-- defining variables -->
-		<div class="draggable" draggable="true">
-			<form action="GET" style="display: inline">
-			<input type="text" style="display: inline"> = <input type="text" style="display: inline">
-		</div>
+	<div class="program">
+		<h1 style="color: aquamarine;">Program</h1>
+		
 	</div>
 </body>
 </html>

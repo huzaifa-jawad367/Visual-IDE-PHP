@@ -1,8 +1,3 @@
-const draggables = document.querySelectorAll(".draggable")
-const program = document.querySelectorAll(".program")
+const draggable = document.getElementsByClassName('draggable');
+const droppable = document.querySelector('.program');
 
-draggables.forEach(draggable => {
-    draggable.addEventListener('dragstart', () => {
-        console.log('drag start')
-    })
-})

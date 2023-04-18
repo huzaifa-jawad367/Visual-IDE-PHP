@@ -7,22 +7,25 @@ body {
     background-color: #333;
     padding: 0.5rem;
     margin-top: 0.5rem;
-    display: flex;
-    flex-direction: row;
 }
 
 .draggable {
     padding: 0.25rem 1rem;
     background-color: white;
     border: 1px solid black;
-    border-radius: 0px;
+    border-radius: 5px;
     cursor: move;
     width: fit-content;
-    display: flex;
+    display: inline-block;
+}
+
+.program {
+    background-color: #333;
+    border: 1px solid black;
 }
 
 h1 {
-    color: red;
+    color: aquamarine;
     width: fit-content;
 }
 
