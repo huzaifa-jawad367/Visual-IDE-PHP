@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles2.css">
-	<script src="script.js"></script>
 	<title>Visual IDE</title>
+
 </head>
 <body>
 
@@ -37,12 +37,17 @@
 		<!-- Reading file -->
 		<div id="Readfile" class="draggable" draggable="true">Read File</div>
 		<div id="Writefile" class="draggable" draggable="true">Write File</div>
+		<div id="endFor" class="draggable" draggable="true">End For</div>
+		<div id="endif" class="draggable" draggable="true">End If</div>
+		<div id="endFunc" class="draggable" draggable="true">End For</div>
 
 	</div>
 
 	<div class="program">
-		<h1 style="color: aquamarine;">Program</h1>
+		<h1 style="color: black;">Program</h1>
 		
 	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>

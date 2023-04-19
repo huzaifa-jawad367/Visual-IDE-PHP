@@ -19,11 +19,6 @@ body {
     display: inline-block;
 }
 
-.program {
-    background-color: #333;
-    border: 1px solid black;
-}
-
 h1 {
     color: aquamarine;
     width: fit-content;
@@ -31,4 +26,11 @@ h1 {
 
 .draggable.dragging {
     opacity: .5;
+}
+
+.program {
+    /* background-color: #333; */
+    margin-top: 0.5rem;
+    height: 1500px;
+    border: 1px solid black;
 }
