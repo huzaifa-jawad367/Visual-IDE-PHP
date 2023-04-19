@@ -31,6 +31,11 @@ h1 {
 .program {
     /* background-color: #333; */
     margin-top: 0.5rem;
-    height: 1500px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.code {
+    margin-top: 1rem;
     border: 1px solid black;
 }

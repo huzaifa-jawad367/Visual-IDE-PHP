@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles2.css">
 	<title>Visual IDE</title>
-
 </head>
 <body>
 
@@ -39,15 +38,35 @@
 		<div id="Writefile" class="draggable" draggable="true">Write File</div>
 		<div id="endFor" class="draggable" draggable="true">End For</div>
 		<div id="endif" class="draggable" draggable="true">End If</div>
-		<div id="endFunc" class="draggable" draggable="true">End For</div>
-
+		<div id="endFunc" class="draggable" draggable="true">End Function</div>
+		<div id="endWhile" class="draggable" draggable="true">End While</div>
+		<div id="endElseIf" class="draggable" draggable="true">End Else If</div>
+		<div id="endElse" class="draggable" draggable="true">End Else</div>
+		<div id="print" class="draggable" draggable="true">Print</div>
 	</div>
 
-	<div class="program">
+	<div class="program" id="CodeBlocks">
 		<h1 style="color: black;">Program</h1>
-		
+	</div>
+
+	<div class="code" id="PHPcode">
+		<h1>PHP Code</h1>
+		<form method="post" action="assignment2/IDE.php">
+			<textarea name="PHP_code" id="PHP_code" cols="100" rows="20"></textarea>
+			<button type="submit" name="execute" class="btn" style="background-color: #0388fc; border-radius: 5px; color: white">Execute</button>
+		</form>
 	</div>
 
 	<script src="script.js"></script>
+
+	<div class="output">
+        <h1 class="text">Output</h1>
+        <?php
+			if(isset($_POST['PHP_code'])){
+			$code = $_POST['PHP_code'];
+			// ob_start(); // start output buffering
+			eval($code); // execute the PHP code
+			}
+		?>
 </body>
 </html>
